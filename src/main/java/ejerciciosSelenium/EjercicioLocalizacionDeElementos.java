@@ -40,6 +40,21 @@ public class EjercicioLocalizacionDeElementos {
         WebElement classExampleLinkText2=driver.findElement(By.linkText("http://www.restapitutorial.com/"));
         WebElement classExampleLinkText3=driver.findElement(By.linkText("https://rahulshettyacademy.com/brokenlink"));
 
+      // Explicar con mis palabras que hace la instrucción “WebDriver driver = new ChromeDriver();”
+        //Básicamente esta instrucción hace que se inicie o bien se abra una pestaña del navegador Chorme la conecta con Selenium y nos permite automatizarla.
+
+        //Explicar con mis palabras que hace la instrucción “WebElement classExampleTextbox = driver.findElement(By.id("name"));”
+        //Esta instrucción nos sirve para poder localizar un campo por el ID en el HTML la cual se guarda en nuestra variable para poder interactuar con él en un futuro.
+
+        //Cuáles son las formas en las que podemos localizar elementos en selenium?
+        //Por ID: By.id
+        //Por nombre: By.name
+        //Por clase: By.classNam
+        //Por etiqueta (tag): By.tagName
+        //Por texto visible de un enlace: By.linkText
+        //Por parte del texto del enlace: By.partialLinkText
+        //Por CSS Selector: By.cssSelector
+        //Por XPath: By.xpath
 
 
 
