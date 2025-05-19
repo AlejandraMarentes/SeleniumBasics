@@ -1,0 +1,48 @@
+# =========================
+# Carpetas de compilación
+# =========================
+target/
+build/
+classes/
+generated-sources/
+*.class
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/encodings.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/httpRequests
+*.iws
+*.iml
+*.ipr
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
