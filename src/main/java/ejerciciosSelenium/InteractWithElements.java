@@ -75,9 +75,9 @@ public class InteractWithElements {
 //        checkbox.click();
 //        System.out.println("ahora el estatus del checkbox isSelected es"+checkbox.isSelected());
 
-        WebElement alert=driver.findElement(By.xpath("//input[@id='alertbtn']"));
-        alert.click();
-        driver.switchTo().alert().accept();
+//        WebElement alert=driver.findElement(By.xpath("//input[@id='alertbtn']"));
+//        alert.click();
+//        driver.switchTo().alert().accept();
 
 ////   EJERCICIO
 //        //Buscar boton confirm por xpath
@@ -94,6 +94,17 @@ public class InteractWithElements {
         //TAREA OPCIONAL
         //Poner el nombre en el campo de "enter your name" y dar click en aceptar, luego volver a poner el nombre y dar click en
         //confirm y aceptar/declinar alerta
+        WebElement name=driver.findElement(By.xpath("//input[@name='enter-name']"));
+        name.sendKeys("Alejandra");
+        //input[@id='confirmbtn']
+        WebElement confirm=driver.findElement(By.xpath("//input[@id='confirmbtn']"));
+        confirm.click();
+        driver.switchTo().alert().accept();
+        name.sendKeys("Alejandra");
+        confirm.click();
+        driver.switchTo().alert().dismiss();
+
+
 
 
 //        //MANEJO DE DROPDOWN
@@ -132,7 +143,7 @@ public class InteractWithElements {
         for (WebElement encabezado:encabezados){
             System.out.println(encabezado.getText()); //.click para darle click y .is selected para seleccionar
         }
-        //Tarea crear clase USING FILE ELEMENT Sseleccionar los 3 radios y despues a los options que se seleccionen los 3 y luego se quiten usando List Element
+        //Tarea crear clase USING FILE ELEMENT Seleccionar los 3 radios y despues a los options que se seleccionen los 3 y luego se quiten usando List Element
 
         Thread.sleep(5000); // No usar solo se hace para alentar la pagina
         driver.quit();
